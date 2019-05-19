@@ -11,8 +11,8 @@ $ npm install --save todolist-v1
 ## Usage
 
 ```js
-var todolistV1 = require('todolist-v1');
-todolistV1();
+Clone the repo
+Run Nodemon app.js
 ```
 
 ## Description
@@ -20,6 +20,9 @@ todolistV1();
 ```
 To Do List using EJS from the course:
 https://www.udemy.com/the-complete-web-development-bootcamp
+
+Example:
+https://www.youtube.com/watch?v=fxzqgT8QSnQ&feature=youtu.be
 ```
 
 ## License
