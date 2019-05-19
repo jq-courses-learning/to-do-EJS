@@ -4,15 +4,23 @@
 
 ## Installation
 
-```sh
-$ npm install --save todolist-v1
+```
+$ git clone https://github.com/jq-courses-learning/to-do-EJS.git
+```
+
+## Requirements
+
+```
+Node v10.15.3 
+Nodemon 1.19.0 *just handy
 ```
 
 ## Usage
 
-```js
+```
 Clone the repo
-Run Nodemon app.js
+CD into the repo
+Run => nodemon app.js or node app.js
 ```
 
 ## Description
