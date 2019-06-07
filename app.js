@@ -41,10 +41,14 @@ const item3 = new Item({
 
 const defaultItems = [item1, item2, item3];
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+	port = 4000;
+}
 
-
-app.listen(process.env.PORT || 4000, function() {
-	console.log("Server running on port 4000");
+// app.listen(process.env.PORT || 4000, function() {
+app.listen(port, function() {
+	console.log("Server started successfully.");
 });
 
 app.get("/", function(req, res){
