@@ -2,8 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+const ejs = require("ejs");
 
 const app = express();
+app.use(express.static("public"));
 app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,7 +19,7 @@ const itemsSchema = new mongoose.Schema ({
 	name: {
 		type: String,
 		required: [true, "Please check your data entry, no name specified!"]
-	}
+	};
 });
 
 const listSchema = {
@@ -30,13 +32,13 @@ const Item = mongoose.model("Item", itemsSchema);
 const List = mongoose.model("List", listSchema);
 
 const item1 = new Item({
-	name: "item1"
+	name: "item1";
 });
 const item2 = new Item({
-	name: "item2"
+	name: "item2";
 });
 const item3 = new Item({
-	name: "item3"
+	name: "item3";
 });
 
 const defaultItems = [item1, item2, item3];
